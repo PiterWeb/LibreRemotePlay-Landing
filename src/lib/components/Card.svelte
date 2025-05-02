@@ -15,7 +15,7 @@
 		class:px-auto={expand}
 	>
 		<h2
-			class="font-bold group-hover:text-white transition-colors duration-300"
+			class="font-bold text-neutral group-hover:text-white transition-colors duration-300"
 			class:text-2xl={description === undefined}
 			class:text-center={description === undefined}
 			class:text-lg={description !== undefined}

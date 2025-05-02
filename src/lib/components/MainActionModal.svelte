@@ -21,7 +21,7 @@
 
 			<a href="/client" class="btn btn-primary btn-lg space-y-4">{@html PlaySVG} Go to Client</a>
 		</div>
-		<div class="flex flex-col flex-grow h-[75vh] w-2/3">
+		<div class="bg-neutral-900 flex flex-col flex-grow h-[75vh] w-2/3">
 			<form method="dialog" class="flex flex-row justify-end p-4">
 				<button class="btn btn-ghost btn-sm rounded-full modal-close">
 					{@html CrossSVG}

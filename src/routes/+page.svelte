@@ -6,13 +6,12 @@
 	import Gamepad from '$lib/assets/gamepad.svelte';
 
 	import Card from '$lib/components/Card.svelte';
-	import TextBlock from '$lib/components/TextBlock.svelte';
 	import MainModal from '$lib/components/MainActionModal.svelte';
 
 	import { _ } from 'svelte-i18n';
 	import { onMount } from 'svelte';
 	import Opinions from '$lib/components/Opinions.svelte';
-	import { downloadUrl, githubUrl } from '$lib/constants';
+	import { githubUrl } from '$lib/constants';
 	import DiscordButton from '$lib/components/DiscordBtn.svelte';
 
 	onMount(() => {
@@ -41,19 +40,19 @@
 >
 	
 
-	<section class="md:max-w-[65ch] md:ml-24 flex flex-col justify-evenly col-span-2">
+	<section class="md:max-w-[65ch] md:ml-24 flex flex-col justify-evenly col-span-2 ">
 		<div>
 			<h1 class="text-center text-[clamp(2rem,6vw,4.2rem)] font-black leading-[1.1] xl:text-left">
 				Play
 				<span
-					class="[&amp;::selection]:text-base-content text-transparent relative col-start-1 row-start-1 bg-clip-text bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900"
+					class="[&amp;::selection]:text-base-content text-primary relative col-start-1 row-start-1"
 				>
 					LOCAL</span
 				>
 
 				<span class="whitespace-nowrap">co-op</span> games
 				<span
-					class="[&amp;::selection]:text-base-content text-transparent relative col-start-1 row-start-1 bg-clip-text bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900"
+					class="[&amp;::selection]:text-base-content text-primary relative col-start-1 row-start-1 "
 				>
 					ONLINE
 				</span>
@@ -77,20 +76,19 @@
 				>
 			</div>
 		</div>
-		<Opinions/>
 		
 	</section>
 
 
 
-	<section class="p-4 -z-10">
-		<Gamepad className="w-full m-auto stroke-neutral motion-safe:animate-bounce"/>
-	</section>
+	<section class="p-4">
+		<Gamepad className="w-full m-auto stroke-slate-200 motion-safe:animate-bounce md:translate-y-0 pt-40"/>
+	</section>	
 </div>
 <ArrowAction targetId="about-remote-controller" />
 <section
 	id="about-remote-controller"
-	class="grid md:grid-cols-3 justify-items-center gap-y-16 gap-x-10 pb-24 pt-28 mx-auto w-3/4 reveal-scale"
+	class="grid md:grid-cols-3 justify-items-center gap-y-16 gap-x-10 pb-12 pt-28 mx-auto w-3/4 reveal-scale"
 >
 
 	<Card expand
@@ -101,14 +99,20 @@
 
 	<Card expand title={$_('how-do-i-get-started')} description={$_('how-do-i-get-started-content')} />
 	
+	
 </section>
+
+<section class="w-full md:w-3/4 mx-auto px-6 grid md:grid-cols-2 gap-6 pb-24">
+	<Opinions/>
+</section>
+
 <section>
 	<div>
 		<div class="flex-col md:flex-row flex justify-center items-center gap-8">
 			<a
 				href={`${githubUrl}`}
 				aria-label={$_('star-us-on-github')}
-				class="group flex flex-row items-center gap-4 font-semibold w-fit h-14 border-gray-400 border-2 rounded-lg p-4"
+				class="group flex flex-row items-center gap-4 font-semibold w-fit h-14 border-2 border-warning shadow-2xl rounded-lg p-4"
 			>
 				<Star /> {$_('star-us-on-github')}</a
 			>

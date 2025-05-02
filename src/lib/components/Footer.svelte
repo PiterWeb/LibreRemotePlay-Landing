@@ -3,7 +3,7 @@
 	import { discordUrl, githubUrl, wikiUrl } from '$lib/constants';
 </script>
 
-<footer id="footer" class="footer p-10 bg-neutral text-neutral-content mt-20">
+<footer id="footer" class="footer p-10 bg-neutral text-neutral-content mt-20 drop-shadow-2xl">
 	<aside>
 		{@html GamepadSVG}
 		<p>LibreRemotePlay.<br />Play LOCAL co-op games ONLINE</p>

@@ -60,7 +60,7 @@
 <div class="indicator fixed bottom-10 right-8">
 	<a
 		id="support-us"
-		class=" text-white content-center bg-neutral flex px-6 py-4 md:rounded-2xl rounded-full gap-1 font-bold"
+		class=" text-white shadow-xl border-2 border-neutral-700 content-center bg-neutral flex px-6 py-4 md:rounded-2xl rounded-full gap-1 font-bold"
 		href="https://ko-fi.com/piterdev"
 		target="_blank"
 		rel="noopener noreferrer"
@@ -74,6 +74,7 @@
 </div>
 
 <style>
+
 	nav {
 		view-transition-name: nav;
 	}

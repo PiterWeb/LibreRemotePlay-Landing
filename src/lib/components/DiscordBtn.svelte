@@ -4,7 +4,7 @@
 </script>
 
 <a href={discordUrl}
-	class="group flex flex-row items-center gap-4 font-semibold w-fit h-14 border-gray-400 border-2 rounded-lg p-4"
+	class="group flex flex-row items-center gap-4 font-semibold w-fit h-14 border-indigo-500 border-2 rounded-lg p-4"
 >
 	<svg
 		class="h-6 w-6 mr-2 group-hover:scale-125 transition-all duration-300"

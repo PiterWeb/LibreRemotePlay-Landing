@@ -20,27 +20,18 @@
 </script>
 
 {#if browser}
-	<Carousel
-		autoplayDuration={3000}
-		duration={5000}
-		infinite
-		autoplay
-		timingFunction="ease-in-out"
-		dots={false}
-		arrows={false}
-		swiping={false}
-	>
+
 		{#each opinions as { img, msg, usr }}
-			<ul class="pt-10 pb-10 md:px-16">
+			<ul class="pt-10 pb-10 w-fit px-10">
 				<!-- Chat -->
-				<li class="max-w-lg flex gap-x-2 sm:gap-x-4 me-11">
-					<img class="inline-block size-9 rounded-full" src={img} alt={`Avatar ${usr}`} />
+				<li class="max-w-lg flex">
+					<img class="inline-block size-9 rounded-full me-2" src={img} alt={`Avatar ${usr}`} />
 					<!-- Card -->
 					<div
-						class="bg-white border border-gray-200 rounded-2xl p-4 space-y-3 dark:bg-neutral-900 dark:border-neutral-700"
+						class="rounded-2xl p-4 space-y-3 bg-neutral-900 shadow-2xl border-neutral-700 border-2"
 					>
 						<div class="space-y-1.5">
-							<p class="mb-1.5 text-sm text-gray-800 dark:text-white">
+							<p class="mb-1.5 text-sm text-white">
 								{msg}
 							</p>
 						</div>
@@ -50,5 +41,4 @@
 				<!-- End Chat -->
 			</ul>
 		{/each}
-	</Carousel>
 {/if}
