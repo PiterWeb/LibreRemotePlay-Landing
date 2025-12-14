@@ -11,6 +11,8 @@
 	import OpenSourceSVG from '$lib/assets/open-source.svg?raw';
 	import P2PSVG from '$lib/assets/p2p.svg?raw';
 	import ShareVideoSVG from '$lib/assets/share-video.svg?raw';
+	import EuropeSVG from '$lib/assets/europe.svg?raw';
+	import NoTrackingSVG from '$lib/assets/no-tracking.svg?raw';
 	
 	import Card from '$lib/components/Card.svelte';
 	import MainModal from '$lib/components/MainActionModal.svelte';
@@ -229,6 +231,22 @@
 					icon={ShareVideoSVG}
 					title={$_('feature.share-your-video-and-audio')}
 					description={$_('feature.share-your-video-and-audio-content')}
+				/>
+			</div>
+			<div class="my-auto reveal-fade">
+				<Card
+					expand
+					icon={EuropeSVG}
+					title={$_('feature.made-in-europe')}
+					description={$_('feature.made-in-europe-content')}
+				/>
+			</div>
+			<div class="my-auto reveal-fade">
+				<Card
+					expand
+					icon={NoTrackingSVG}
+					title={$_('feature.no-tracking')}
+					description={$_('feature.no-tracking-content')}
 				/>
 			</div>
 		</article>
