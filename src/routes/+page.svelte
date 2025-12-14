@@ -4,7 +4,14 @@
 	import GuideSVG from '$lib/assets/guide.svg?raw';
 	import Star from '$lib/assets/star.svelte';
 	import Gamepad from '$lib/assets/gamepad.svelte';
-
+	
+	import LowLatencySVG from '$lib/assets/low-latency.svg?raw';
+	import PlayAnyGameSVG from '$lib/assets/play-any-game.svg?raw';
+	import NoAccountSVG from '$lib/assets/no-account.svg?raw';
+	import OpenSourceSVG from '$lib/assets/open-source.svg?raw';
+	import P2PSVG from '$lib/assets/p2p.svg?raw';
+	import ShareVideoSVG from '$lib/assets/share-video.svg?raw';
+	
 	import Card from '$lib/components/Card.svelte';
 	import MainModal from '$lib/components/MainActionModal.svelte';
 
@@ -179,6 +186,7 @@
 			<div class="my-auto reveal-fade">
 				<Card
 					expand
+					icon={PlayAnyGameSVG}
 					title={$_('feature.play-any-game')}
 					description={$_('feature.play-any-game-content')}
 				/>
@@ -186,6 +194,7 @@
 			<div class="my-auto reveal-fade">
 				<Card
 					expand
+					icon={LowLatencySVG}
 					title={$_('feature.low-latency')}
 					description={$_('feature.low-latency-content')}
 				/>
@@ -193,6 +202,7 @@
 			<div class="my-auto reveal-fade">
 				<Card
 					expand
+					icon={P2PSVG}
 					title={$_('feature.p2p-connection')}
 					description={$_('feature.p2p-connection-content')}
 				/>
@@ -200,6 +210,7 @@
 			<div class="my-auto reveal-fade">
 				<Card
 					expand
+					icon={NoAccountSVG}
 					title={$_('feature.no-account-required')}
 					description={$_('feature.no-account-required-content')}
 				/>
@@ -207,6 +218,7 @@
 			<div class="my-auto reveal-fade">
 				<Card
 					expand
+					icon={OpenSourceSVG}
 					title={$_('feature.free-and-open-source')}
 					description={$_('feature.free-and-open-source-content')}
 				/>
@@ -214,6 +226,7 @@
 			<div class="my-auto reveal-fade">
 				<Card
 					expand
+					icon={ShareVideoSVG}
 					title={$_('feature.share-your-video-and-audio')}
 					description={$_('feature.share-your-video-and-audio-content')}
 				/>

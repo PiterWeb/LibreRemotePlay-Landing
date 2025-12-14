@@ -169,3 +169,7 @@ html {
 .lite-youtube-fallback:focus {
 	outline: 2px solid red;
 }
+
+.icon-shadow {
+    @apply stroke-black group-hover:stroke-white transition-colors duration-300;
+}
